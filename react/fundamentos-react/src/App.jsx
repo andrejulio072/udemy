@@ -3,7 +3,6 @@ import "./App.css";
 
 import Card from "./components/layout/Card";
 
-import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Aleatorio from "./components/basicos/Aleatorio";
