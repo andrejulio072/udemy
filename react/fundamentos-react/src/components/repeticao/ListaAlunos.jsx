@@ -1,5 +1,5 @@
-import React from 'react';
-import alunos from '../../data/alunos';
+import React from "react";
+import alunos from "../../data/alunos";
 
 export default (props) => {
   const alunosLI = alunos.map((aluno) => {
@@ -12,7 +12,7 @@ export default (props) => {
 
   return (
     <div>
-      <ul style={{ listStyle: 'none' }}>{alunosLI}</ul>
+      <ul style={{ listStyle: "none" }}>{alunosLI}</ul>
     </div>
   );
-}
+};
