@@ -3,11 +3,11 @@ import "./App.css";
 
 import Card from "./components/layout/Card";
 
-import ComParametro from "./components/basicos/ComParametro";
-import Fragmento from "./components/basicos/Fragmento";
-import Aleatorio from "./components/basicos/Aleatorio";
-import Familia from "./components/basicos/Familia";
-import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ComParametro from "./components/basics/ComParametro";
+import Fragmento from "./components/basics/Fragmento";
+import Aleatorio from "./components/basics/Aleatorio";
+import Familia from "./components/basics/Familia";
+import FamiliaMembro from "./components/basics/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 export default () => (
