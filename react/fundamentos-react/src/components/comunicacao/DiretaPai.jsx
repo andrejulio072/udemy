@@ -1,11 +1,10 @@
 import React from 'react';
+import DiretaFilho from './DiretaFilho';
 
 export default props => {
     return (
         <div>
-            <span>{props.nome} </span>
-            <span><strong>{props.idade} </strong></span>
-            <span>{props.nerd ? 'Verdadeiro' : 'Falso'}</span>
+            <DiretaFilho texto='Filho' numero={20} bool={true} />
         </div>
     )
 }

@@ -11,6 +11,8 @@ import Aleatorio from "./components/basics/Aleatorio";
 import Familia from "./components/basics/Familia";
 import FamiliaMembro from "./components/basics/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
@@ -18,9 +20,13 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
-    <Card titulo="#08 - Renderizacao condicional " color="#3A9AD9">
+    <Card titulo="#09 - Comunicação Direta" color="#59323C">
+        <DiretaPai />
+      </Card>
+
+      <Card titulo="#08 - Renderização Condicional" color="#982395">
         <ParOuImpar numero={21} />
-        <UsuarioInfo usuario={{ nome: "Fernando" }} /> 
+        <UsuarioInfo usuario={{ nome: "Fernando" }} />
         </Card>
 
       <Card titulo="#07 - Desafio Repetição" color="#3A9AD9">
