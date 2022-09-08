@@ -4,7 +4,7 @@ import "./App.css";
 import Card from "./components/layout/Card";
 
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
-// import ParOuImpar from "./components/condicional/ParOuImpar";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 import ComParametro from "./components/basics/ComParametro";
 import Fragmento from "./components/basics/Fragmento";
 import Aleatorio from "./components/basics/Aleatorio";
@@ -18,6 +18,9 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+    <Card titulo="#08 - Renderizacao condicional " color="#3A9AD9">
+        <ParOuImpar />
+        </Card>
 
       <Card titulo="#07 - Desafio Repetição" color="#3A9AD9">
         <TabelaProdutos />
