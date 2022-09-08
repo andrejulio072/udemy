@@ -3,6 +3,7 @@ import "./App.css";
 
 import Card from "./components/layout/Card";
 
+import ParOuImpar from "./components/condicional/ParOuImpar";
 import ComParametro from "./components/basics/ComParametro";
 import Fragmento from "./components/basics/Fragmento";
 import Aleatorio from "./components/basics/Aleatorio";
@@ -16,6 +17,10 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+
+      <Card titulo="#07 - Desafio Repetição" color="#3A9AD9">
+        <TabelaProdutos />
+        </Card>
 
       <Card titulo="#06 - Repetição" color="#FF85CB">
         <ListaAlunos />
