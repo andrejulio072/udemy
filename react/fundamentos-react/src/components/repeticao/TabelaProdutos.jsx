@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
+import "./TabelaProdutos.css";
 import produtos from "../../data/produtos";
 
 export default (props) => {
