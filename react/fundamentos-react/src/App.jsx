@@ -21,6 +21,11 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+
+      <Card titutlo="#10 - Comunicação Indireta" color="#8BAD39">
+        <IndiretaPai />
+      </Card>
+
     <Card titulo="#09 - Comunicação Direta" color="#59323C">
         <DiretaPai />
       </Card>
