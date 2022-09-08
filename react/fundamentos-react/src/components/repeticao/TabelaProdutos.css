@@ -1,13 +1,13 @@
-
 .TabelaProdutos table {
   width: 100%;
+}
 
 .TabelaProdutos th {
   background-color: rgb(16, 143, 175);
 }
-.TabelaProdutos .td {
+.TabelaProdutos td {
   background-color: rgb(16, 143, 175);
 }
-.TabelaProdutos Par {
+.TabelaProdutos .Par {
   background-color: rgb(16, 143, 175);
 }
