@@ -3,6 +3,7 @@ import "./App.css";
 
 import Card from "./components/layout/Card";
 
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import ComParametro from "./components/basics/ComParametro";
 import Fragmento from "./components/basics/Fragmento";
