@@ -12,6 +12,7 @@ import Familia from "./components/basics/Familia";
 import FamiliaMembro from "./components/basics/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
