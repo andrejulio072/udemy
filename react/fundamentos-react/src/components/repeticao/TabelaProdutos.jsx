@@ -10,6 +10,11 @@ export default (props) => {
           <tr>
             <th>Id</th>
             <th>Nome</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
-  )
-}
+  );
+};
