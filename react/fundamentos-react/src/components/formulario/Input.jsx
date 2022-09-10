@@ -5,7 +5,7 @@ export default (props) => {
   const [valor, setValor] = React.useState("Inicial");
 
   return (
-    <div>
+    <div className="Input">
       <input value={valor} onChange={(e) => setValor(e.target.value)} />
     </div>
   );

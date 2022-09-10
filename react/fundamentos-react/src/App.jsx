@@ -15,34 +15,32 @@ import ListaAlunos from "./components/repeticao/ListaAlunos";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
-
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
-
-    <Card titutlo="#11 - Componente Controlado (Input)" color="#E45F56">
-      <Input />
-    </Card>
+      <Card titutlo="#11 - Componente Controlado (Input)" color="#E45F56">
+        <Input />
+      </Card>
 
       <Card titutlo="#10 - Comunicação Indireta" color="#8BAD39">
         <IndiretaPai />
       </Card>
 
-    <Card titulo="#09 - Comunicação Direta" color="#59323C">
+      <Card titulo="#09 - Comunicação Direta" color="#59323C">
         <DiretaPai />
       </Card>
 
       <Card titulo="#08 - Renderização Condicional" color="#982395">
         <ParOuImpar numero={21} />
         <UsuarioInfo usuario={{ nome: "Fernando" }} />
-        </Card>
+      </Card>
 
       <Card titulo="#07 - Desafio Repetição" color="#3A9AD9">
         <TabelaProdutos />
-        </Card>
+      </Card>
 
       <Card titulo="#06 - Repetição" color="#FF85CB">
         <ListaAlunos />
