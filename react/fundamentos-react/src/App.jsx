@@ -24,7 +24,7 @@ export default () => (
     <div className="Cards">
 
     <Card titutlo="#12 - Contador" color="#424242">
-      <Contador numeroInicial={100} />
+      <Contador numeroInicial={100}  />
     </Card>
 
 
