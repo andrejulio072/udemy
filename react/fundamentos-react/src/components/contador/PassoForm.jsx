@@ -5,10 +5,12 @@ export default props => {
     <div>
       <div>
           <label htmlFor="passoInput">Passo: </label>
-          <input value={this.state.passo}
-          onChange={e => this.setState({ passo: +e.target.value })}
+          <input
           id="passoInput"
-          type="number" /> <br />
+          type="number"
+          value={props.passo}
+          onChange={e=>props.setPasso(+e.target.value)}
+          />
           </div>
     </div>
   )
