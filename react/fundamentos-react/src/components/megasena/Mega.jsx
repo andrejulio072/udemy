@@ -20,12 +20,16 @@ export default props => {
     return numeros;
   }
 
-  const numerosIniciais = Array(props.qtde || 6).fill(0);
-  const [numeros, setNumeros] = useState(Array(props.qtdeNumero || 6).fill(0));
+  const qtde = props.qtde || 6;
+  const numerosIniciais = Array(props.qtde).fill(0);
+  const [numeros, setNumeros] = useState(Array(numerosIniciais));
     return (
         <div>
             <h2>Mega</h2>
-            <h3>{props.numero}</h3>
+            <h3>{numeros.join(' ')}</h3>
+            <button onClick={_ => setNumeros(gerarNumeros(props.qtdeNumero))}>
+                Gerar Números
+            </button>
         </div>
     )
 }
