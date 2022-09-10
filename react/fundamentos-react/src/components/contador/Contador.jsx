@@ -6,14 +6,15 @@ class Contador extends React.Component {
 
     this.state = {
       numero: this.props.numeroInicial || 0,
+      passo: this.props.passoInicial || 5,
     };
 
   }
   incrementar = () => {
-    this.setState({ numero: this.state.numero + 1 });
+    this.setState({ numero: this.state.numero + this.state.passo });
   };
   decrementar = () => {
-    this.setState({ numero: this.state.numero - 1 });
+    this.setState({ numero: this.state.numero - this.state.passo });
   };
 
   render() {
