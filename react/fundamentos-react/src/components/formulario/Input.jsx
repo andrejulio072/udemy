@@ -10,6 +10,7 @@ export default (props) => {
 
   return (
     <div className="Input">
+      <h2>{valor }</h2>
       <input value={valor} onChange={(e) => setValor(e.target.value)} />
     </div>
   );
