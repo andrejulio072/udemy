@@ -17,6 +17,7 @@ class Contador extends React.Component {
       <div>
         <h2>Contador</h2>
         <p>{this.state.numero}</p>
+        <button onClick={this.incrementar}>+</button>
       </div>
     );
   }
