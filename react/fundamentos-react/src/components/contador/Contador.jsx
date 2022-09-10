@@ -8,10 +8,12 @@ class Contador extends React.Component {
       numero: this.props.numeroInicial || 0,
     };
 
-    this.incrementar = this.incrementar.bind(this);
   }
   incrementar = () => {
     this.setState({ numero: this.state.numero + 1 });
+  };
+  decrementar = () => {
+    this.setState({ numero: this.state.numero - 1 });
   };
 
   render() {
@@ -20,6 +22,7 @@ class Contador extends React.Component {
         <h2>Contador</h2>
         <p>{this.state.numero}</p>
         <button onClick={this.incrementar}>+</button>
+        <button onClick={this.decrementar}>-</button>
       </div>
     );
   }
