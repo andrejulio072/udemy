@@ -16,12 +16,22 @@ class Contador extends React.Component {
   decrementar = () => {
     this.setState({ numero: this.state.numero - this.state.passo });
   };
+  setPasso = (novoPasso) => {
+    this.setState({ passo: novoPasso });
+  };
 
   render() {
     return (
       <div>
         <h2>Contador</h2>
         <p>{this.state.numero}</p>
+        <div>
+          <label htmlFor="passoInput">Passo: </label>
+          <input value={this.state.passo}
+          onChange={e => this.setState({ passo: +e.target.value })}
+          id="passoInput"
+          type="number" /> <br />
+          </div>
         <button onClick={this.incrementar}>+</button>
         <button onClick={this.decrementar}>-</button>
       </div>
