@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
 
 class Contador extends React.Component {
+  state = {
+    numero: 0,
+  };
 
-  render () {
+  render() {
     return (
       <div>
         <h2>Contador</h2>
@@ -11,4 +14,4 @@ class Contador extends React.Component {
   }
 }
 
-export default Contador
+export default Contador;
