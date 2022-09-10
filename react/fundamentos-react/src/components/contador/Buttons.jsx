@@ -3,7 +3,8 @@ import React from 'react'
 export default props => {
   return (
     <div>
-      <h1>{props.numero}</h1>
+     <button onClick={this.incrementar}>+</button>
+        <button onClick={this.decrementar}>-</button>
     </div>
   )
 }

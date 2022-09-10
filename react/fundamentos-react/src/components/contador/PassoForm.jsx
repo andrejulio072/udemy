@@ -3,7 +3,13 @@ import React from 'react'
 export default props => {
   return (
     <div>
-      <h1>{props.numero}</h1>
+      <div>
+          <label htmlFor="passoInput">Passo: </label>
+          <input value={this.state.passo}
+          onChange={e => this.setState({ passo: +e.target.value })}
+          id="passoInput"
+          type="number" /> <br />
+          </div>
     </div>
   )
 }
