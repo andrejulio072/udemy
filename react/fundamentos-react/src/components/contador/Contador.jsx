@@ -9,6 +9,7 @@ class Contador extends React.Component {
     return (
       <div>
         <h2>Contador</h2>
+        <p>Valor Inicial: {this.props.numeroInicial}</p>
       </div>
     );
   }
