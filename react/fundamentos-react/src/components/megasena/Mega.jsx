@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import "./Mega.css"
 
 export default props => {
 
@@ -27,7 +28,11 @@ export default props => {
         <div>
             <h2>Mega</h2>
             <h3>{numeros.join(' ')}</h3>
-
+            <div className="Mega">
+                <label>Qtde de Números</label>
+                <input type="text
+                " value={qtde} onChange={e => setQtde(+e.target.value)} />
+            </div>
             <button onClick={_ => setNumeros(gerarNumeros(qtde))}>
                 Gerar Números
             </button>
