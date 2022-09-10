@@ -11,8 +11,13 @@ export default (props) => {
   return (
     <div className="Input">
       <h2>{valor }</h2>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        listStyle: "none" }}>
       <input value={valor} onChange={(e) => setValor(e.target.value)} />
       <input value={valor} readOnly />
+      </div>
     </div>
   );
 };
