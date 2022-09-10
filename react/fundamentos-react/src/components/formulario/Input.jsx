@@ -12,6 +12,7 @@ export default (props) => {
     <div className="Input">
       <h2>{valor }</h2>
       <input value={valor} onChange={(e) => setValor(e.target.value)} />
+      <input value={valor} readOnly />
     </div>
   );
 };
