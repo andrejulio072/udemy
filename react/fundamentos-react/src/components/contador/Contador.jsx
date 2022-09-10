@@ -7,6 +7,8 @@ class Contador extends React.Component {
     this.state = {
       numero: this.props.numeroInicial || 0,
     };
+
+    this.incrementar = this.incrementar.bind(this);
   }
   incrementar = () => {
     this.setState({ numero: this.state.numero + 1 });
