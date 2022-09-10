@@ -21,7 +21,7 @@ export default props => {
   }
 
   const [qtde, setQtde] = useState(props.qtde || 6);
-  const numerosIniciais = Array(qtde).fill(0);
+  const numerosIniciais = gerarNumeros(qtde);
   const [numeros, setNumeros] = useState(numerosIniciais);
     return (
         <div>
