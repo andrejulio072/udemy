@@ -1,4 +1,5 @@
 import React from "react";
+import "./Contador.css";
 
 class Contador extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class Contador extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="Contador">
         <h2>Contador</h2>
         <p>{this.state.numero}</p>
         <div>
