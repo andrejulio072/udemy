@@ -20,7 +20,8 @@ export default props => {
     return numeros;
   }
 
-  const [numeros, setNumeros] = useState(Array(props.qtdeNumero).fill(0));
+  const numerosIniciais = Array(props.qtde || 6).fill(0);
+  const [numeros, setNumeros] = useState(Array(props.qtdeNumero || 6).fill(0));
     return (
         <div>
             <h2>Mega</h2>

@@ -15,6 +15,7 @@ import FamiliaMembro from "./components/basics/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Mega from "./components/megasena/Mega";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
@@ -22,6 +23,11 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#13 - Desafio Mega Sena" color="#B9006E">
+        <Mega />
+
+
+      </Card>
 
     <Card titutlo="#12 - Contador" color="#424242">
       <Contador numeroInicial={100}  />
