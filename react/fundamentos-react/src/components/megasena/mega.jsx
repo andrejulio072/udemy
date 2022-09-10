@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export default props => {
+
+  function gerarNumerosNaoContidos(min, max, array) {
+    const aleatorio = parseInt(Math.random() * (max + 1 - min)) + min;
+    return array.includes(aleatorio)
+      ? gerarNumerosNaoContidos(min, max, array)
+      : aleatorio;
+  }
   function gerarNumeros(qtde) {
     const numeros = Array(qtde)
       .fill(0)
@@ -12,6 +19,8 @@ export default props => {
 
     return numeros;
   }
+
+  const [numeros, setNumeros] = useState(Array(props.qtdeNumero).fill(0));
     return (
         <div>
             <h2>Mega</h2>
